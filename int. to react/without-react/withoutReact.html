@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            color: #000;
+            margin: 10px;
+        }
+        button{
+            color: white;
+            background-color: rgb(100, 100, 238);
+            border: none;
+            outline: none;
+            border-radius: 12px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="count">0</div>
+    <button>Click Me!</button>
+    <script>
+        document.querySelector("button").addEventListener("click", ()=>{
+            document.querySelector(".count").innerHTML = parseInt(document.querySelector(".count").innerHTML) + 1;
+
+        })
+    </script>
+</body>
+</html>
