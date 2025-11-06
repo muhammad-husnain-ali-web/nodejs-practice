@@ -1,0 +1,10 @@
+ul{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    background-color: rgb(221, 221, 140);
+    height: 10vh;
+}
+li{
+    list-style-type: none;
+}
